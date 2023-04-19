@@ -34,8 +34,6 @@ function App() {
 
   const category = activeCategories > 0 ? `category=${activeCategories}`:""
 
-  
-
   useEffect(() => {
     
     setIsLoading(true);    fetch(`https://63f695a3ab76703b15c1c124.mockapi.io/photo_colactions?page=${page}&limit=3&${category}`)
